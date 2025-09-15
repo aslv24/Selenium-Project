@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ScrollingToEnd {
-	
-	
+
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,11 +16,11 @@ public class ScrollingToEnd {
 		driver.get("https://www.facebook.com/legal/terms/update");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		
+
 		JavascriptExecutor script=(JavascriptExecutor)driver;
-		
+
 		script.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-		
+
 	}
 
 }

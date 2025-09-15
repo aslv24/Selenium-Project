@@ -8,8 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RadioButtonHandling {
-	
-	
+
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,22 +20,22 @@ public class RadioButtonHandling {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		
+
 		WebElement maleRadioButton = driver.findElement(By.xpath("html/body/div/div/div/div[2]/div/div[2]/div/div/div/form/div/div[4]/span/span[2]/label/input"));
-		
+
 		System.out.println(maleRadioButton.isDisplayed());//true
 		System.out.println(maleRadioButton.isEnabled());//true
-		
+
 		boolean selected = maleRadioButton.isSelected();
 		System.out.println(selected);//false
-		
-		if(selected!=true)
+
+		if(!selected)
 		{
 		maleRadioButton.click();
 		}
-		
+
 		System.out.println(maleRadioButton.isSelected());//true
-		
+
 	}
 
 }

@@ -10,19 +10,19 @@ public class OpenNewTab {
 		// TODO Auto-generated method stub
 
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.manage().window().maximize();
-		
+
 		driver.get("https://www.flipkart.com/");
-		
+
 		System.out.println(driver.getTitle());
-		
+
 		System.out.println(driver.getCurrentUrl());
-		
+
 		driver.switchTo().newWindow(WindowType.TAB).get("https://www.facebook.com/");
-		
+
 		System.out.println(driver.getTitle());
-		
+
 		System.out.println(driver.getCurrentUrl());
 	}
 

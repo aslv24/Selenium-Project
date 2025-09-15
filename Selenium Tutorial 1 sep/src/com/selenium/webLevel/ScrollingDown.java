@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ScrollingDown {
-	
-	
+
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,11 +16,11 @@ public class ScrollingDown {
 		driver.get("https://www.facebook.com/");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		
+
 		JavascriptExecutor script=(JavascriptExecutor)driver;
-		
+
 		script.executeScript("window.scrollBy(0,2634)");
-		
+
 	}
 
 }

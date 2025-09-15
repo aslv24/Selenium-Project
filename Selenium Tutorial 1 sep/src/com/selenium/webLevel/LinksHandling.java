@@ -17,21 +17,21 @@ public class LinksHandling {
 		driver.get("https://www.facebook.com/");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		
-		
+
+
 		List<WebElement> aTag= driver.findElements(By.tagName("a"));
-		
+
 		int size = aTag.size();
-		
+
 		System.out.println("Overall links present in the webpage count :"+size);
-		
+
 		for(int i=0; i<size;i++)
 		{
 		System.out.println(aTag.get(i).getText()+"======"+aTag.get(i).getAttribute("href"));
 		}
-		
-		
-		
+
+
+
 	}
 
 }

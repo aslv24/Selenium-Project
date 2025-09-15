@@ -8,8 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AbsoluteXpath {
-	
-	
+
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,10 +20,10 @@ public class AbsoluteXpath {
 		driver.get("https://register.rediff.com/register/register.php?FormName=user_details");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		
+
 		WebElement fullnameField = driver.findElement(By.xpath("html/body/div[2]/div[2]/form/div/div[2]/input"));
 		fullnameField.sendKeys("admin");
-		
+
 	}
 
 }

@@ -15,11 +15,11 @@ public class LocatorSet2 {
 		driver.get("https://www.facebook.com/");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		
-		
+
+
 		WebElement forgotPassword = driver.findElement(By.partialLinkText("?"));
 		forgotPassword.click();
-		
+
 	}
 
 }
